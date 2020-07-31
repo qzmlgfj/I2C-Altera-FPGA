@@ -107,7 +107,7 @@ void writeReg(alt_u16 addr, alt_u8 dat)
     stop();
 }
 
-//Read 16 bits
+//Read 8 bits
 alt_u8 readReg(alt_u16 addr)
 {
     alt_u8 cmd, dat;
@@ -134,7 +134,7 @@ alt_u8 readReg(alt_u16 addr)
     return dat;
 }
 
-//Read 16 bits
+//Write 16 bits
 void writeReg16Bit(alt_u16 addr, alt_u16 dat)
 {
     alt_u8 dat_h1 = dat >> 8; //First half of the data
@@ -144,7 +144,7 @@ void writeReg16Bit(alt_u16 addr, alt_u16 dat)
     writeReg(addr + 1, dat_h2);
 }
 
-//Write 16 bits
+//Read 16 bits
 alt_u16 readReg16Bit(alt_u16 addr)
 {
     alt_u8 dat_h1;
