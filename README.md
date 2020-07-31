@@ -8,4 +8,4 @@ Just have to change the include path in the comment, don't forget to make sure t
 
 ## Prompt
 
-*I've tested it on Quartus Prime 18.1*
+*I've tested it on Quartus Prime 18.1, if you want to use other sensors, you'd better modify some functions, because **some details might be different***
